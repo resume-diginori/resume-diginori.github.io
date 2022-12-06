@@ -16,19 +16,7 @@
 
       <sidebar-section :options="sections.info" />
       <sidebar-section :options="sections.logs" />
-      <sidebar-section :options="sections.hobbies">
-        <template v-slot:item="{ item }">
-          <v-chip>
-            <v-avatar>
-              <v-icon>
-                {{ item.icon }}
-              </v-icon>
-            </v-avatar>
-            {{ item.text }}
-          </v-chip>
-        </template>
-      </sidebar-section>
-      <sidebar-section :options="sections.skill">
+      <sidebar-section :options="sections.skills">
         <template v-slot:items="{ items }">
           <v-container pa-0>
             <v-layout
@@ -56,6 +44,18 @@
               </template>
             </v-layout>
           </v-container>
+        </template>
+      </sidebar-section>
+      <sidebar-section :options="sections.hobbies">
+        <template v-slot:item="{ item }">
+          <v-chip>
+            <v-avatar>
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </v-avatar>
+            {{ item.text }}
+          </v-chip>
         </template>
       </sidebar-section>
     </v-card-text>
@@ -132,8 +132,8 @@ export default {
             },
           ],
         },
-        skill: {
-          title: 'SKILL',
+        skills: {
+          title: 'SKILLS',
           items: [
             {
               text : 'python',
