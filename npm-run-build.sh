@@ -1,4 +1,5 @@
 
 export NODE_OPTIONS=--openssl-legacy-provider
 npm run build
-mv dist docs
+rm -rf docs
+cp -rf dist docs
