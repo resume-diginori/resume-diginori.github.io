@@ -1,3 +1,24 @@
+# Tom Sawyer's Resume
+
+### Gratitude greeting
+- Thanks to [@evryn](https://github.com/evryn), I could easily make a resume. The code below was forked and used.
+- https://github.com/evryn/vue-modern-resume
+- I followed Evryn. His code is full of lessons to learn.
+
+### History of changes that I made additional
+
+#### run
+- An error such as ['ERR_OSSL_EVP_UNSUPPORTED'](https://github.com/resume-diginori/resume-diginori.github.io/issues/1) occurs at 'npm run dev'
+- Resolve with [issues/1#issuecomment-1338658706](https://github.com/resume-diginori/resume-diginori.github.io/issues/1#issuecomment-1338658706)
+- used version : Node.js v18.12.1
+
+#### icons
+- Latest version as of December 6, 2022
+- Found and replaced in [ccdnjs.com/libraries/MaterialDesign-Webfont](https://cdnjs.com/libraries/MaterialDesign-Webfont)
+- 3.6.95 -> 7.0.96
+- at ~/public/index.html
+- To search for icon files - https://materialdesignicons.com/
+
 <h1 align="center">
   <br>
   <a target="_blank" href="https://evryn.github.io/vue-modern-resume/">
