@@ -7,17 +7,17 @@
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
         <h1>
-          Amirreza <span class="light-blue--text text--lighten-3">Nasiri</span>
+          Tom <span class="light-blue--text text--lighten-3">Sawyer</span>
         </h1>
         <span>
-          A challenge-loving web developer
+          an adventurous person
         </span>
       </div>
 
       <sidebar-section :options="sections.info" />
-      <sidebar-section :options="sections.socials" />
+      <sidebar-section :options="sections.logs" />
       <sidebar-section :options="sections.hobbies">
-        <template v-slot:item="{item}">
+        <template v-slot:item="{ item }">
           <v-chip>
             <v-avatar>
               <v-icon>
@@ -28,16 +28,14 @@
           </v-chip>
         </template>
       </sidebar-section>
-      <sidebar-section :options="sections.languages">
-        <template v-slot:items="{items}">
+      <sidebar-section :options="sections.skill">
+        <template v-slot:items="{ items }">
           <v-container pa-0>
             <v-layout
               wrap
               class="text-xs-center"
             >
-              <template
-                v-for="(item, i) in items"
-              >
+              <template v-for="(item, i) in items">
                 <v-flex
                   :key="i"
                   md3
@@ -77,49 +75,34 @@ export default {
           title: 'INFO',
           items: [
             {
-              name: 'Email',
-              icon: 'mdi-email',
-              text: 'hi@amirreza.in',
+              name: 'linkedin',
+              icon: 'mdi-linkedin',
+              text: '@diginori',
             },
             {
-              name: 'Website',
-              icon: 'mdi-web',
-              text: 'amirreza.in',
-            },
-            {
-              name: 'Birth Date',
-              icon: 'mdi-cake-variant',
-              text: 'Dec 7, 1996',
-            },
-            {
-              name: 'Habitation',
+              name: 'live',
               icon: 'mdi-map-marker',
-              text: 'Tabriz, Iran',
+              text: 'Heal the World',
             },
           ],
         },
-        socials: {
-          title: 'SOCIALS',
+        logs: {
+          title: 'LOGS',
           items: [
             {
-              icon: 'mdi-github-circle',
-              text: 'github.com/AmirrezaNasiri',
-              link: 'https://github.com/AmirrezaNasiri',
+              icon: 'mdi-math-log',
+              text: 'loG.diginori.com',
+              link: 'https://loG.diginori.com',
             },
             {
-              icon: 'mdi-linkedin-box',
-              text: 'linkedin.com/in/amirreza-nasiri',
-              link: 'https://linkedin.com/in/amirreza-nasiri',
+              icon: 'mdi-post',
+              text: 'blog.diginori.com',
+              link: 'https://blog.diginori.com',
             },
             {
-              icon: 'mdi-twitter',
-              text: 'twitter.com/Amirreza_Nasiri',
-              link: 'https://twitter.com/Amirreza_Nasiri',
-            },
-            {
-              icon: 'mdi-instagram',
-              text: 'instagram.com/amirreza.n96',
-              link: 'https://instagram.com/amirreza.n96',
+              icon: 'mdi-newspaper-variant-multiple',
+              text: 'Tom and datayanolja in the news',
+              link: 'https://byline.network/2017/10/11-5/',
             },
           ],
         },
@@ -128,69 +111,53 @@ export default {
           items: [
 
             {
-              icon: 'mdi-bullseye',
-              text: 'Getting out of Safe Zone',
-            },
-            {
-              icon: 'mdi-biohazard',
-              text: 'Challenges',
+              icon: 'mdi-swim',
+              text: 'sea swimming',
             },
             {
               icon: 'mdi-bike',
-              text: 'Cycling',
+              text: 'cycling',
             },
             {
               icon: 'mdi-image-filter-hdr',
-              text: 'Nature',
+              text: 'minimal camping',
             },
             {
-              icon: 'mdi-auto-fix',
-              text: 'Hacking Stuffs',
-            },
-            {
-              icon: 'mdi-teach',
-              text: 'Teaching',
-            },
-            {
-              icon: 'mdi-karate',
-              text: 'Sports',
+              icon: 'mdi-alpha-p-circle',
+              text: 'physics',
             },
             {
               icon: 'mdi-music',
-              text: 'Music',
-            },
-            {
-              icon: 'mdi-account-group',
-              text: 'Leadership',
-            },
-            {
-              icon: 'mdi-book-open-page-variant',
-              text: 'Books',
-            },
-            {
-              icon: 'mdi-android-debug-bridge',
-              text: 'Tickling Bugs!',
+              text: 'digiNORI.com',
             },
           ],
         },
-        languages: {
-          title: 'LANGUAGES',
+        skill: {
+          title: 'SKILL',
           items: [
             {
-              text : 'English',
+              text : 'python',
+              value: 90,
+            },
+            {
+              text : 'cloud',
+              value: 90,
+            },
+            {
+              text : 'docker',
+              value: 80,
+            },
+            {
+              text : 'js',
               value: 70,
             },
             {
-              text : 'Turkish',
-              value: 45,
+              text : 'ruby',
+              value: 60,
             },
             {
-              text : 'Azeri',
-              value: 100,
-            },
-            {
-              text : 'Persian',
-              value: 100,
+              text : 'java',
+              value: 50,
             },
           ],
         },
@@ -201,7 +168,7 @@ export default {
 </script>
 
 <style scoped>
-.sidebar{
-    background: #2e2e2e;
+.sidebar {
+  background: #2e2e2e;
 }
 </style>
